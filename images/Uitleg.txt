@@ -1,0 +1,15 @@
+function deuropen() {
+	if (sleutel == false) {
+    text.innerHTML = "de deur is gesloten!";
+    buttontekst('Terug', null, null);
+    btn1.onclick = driekanten;
+  	} else if (sleutel == true) {
+	titel.innerHTML = 'Deur';
+	beschrijving.innerHTML = 'De sleutel past en de deur is open.';
+	buttontekst('Naar binnen', 'Terug', null);
+	img.src = 'images/deuropen.png';
+	btn1.onclick = woonkamer;
+	btn2.onclick = driekanten;
+}
+
+	sleutel = true
